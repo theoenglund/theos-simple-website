@@ -10,4 +10,4 @@ Då denna sida är min första uppskattas konstruktiv kritik!
 This project is licensed under the GNU General Public License v3.0 - see the [LICENSE](LICENSE) file for details.
 
 
-thegamingsloth
+Theo Englund
