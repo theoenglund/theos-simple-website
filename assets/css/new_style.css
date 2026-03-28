@@ -29,11 +29,16 @@ nav a:hover {
 
 /*
 * Min nya style.css för att centrera innehållet
-*
+* Se kontaktinformation på min sida vid frågor
 */
+
+body {
+  margin: 0;
+}
 
 .index {
   margin: 40px auto; 
+  max-width: 750px;
   padding: 40px;
 }
 
