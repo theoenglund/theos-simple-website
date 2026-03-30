@@ -32,6 +32,11 @@ nav a:hover {
 * Se kontaktinformation på min sida vid frågor
 */
 
+table a {
+    font-size: 30px;
+    font-weight: bold;
+}
+
 body {
   margin: 0;
 }
