@@ -121,6 +121,9 @@ along with theoenglund.github.io. If not, see https://www.gnu.org/licenses/.
 <p>Ett (lite utdaterat) <a href="feed.xml">RSS-feed </a> för att följa uppdateringar/nyheter från min webbsida.</p>
 	
 
+<h5>Antalet sekunder sedan 1 januari 1970: <span id="sekunder-sedan-epok"></span></h5>
+
+	
 <!-- Ska bygga en sektion här sen 	
 <h2>Just nu:</h2>
 <p><li>Text här</li></p>
@@ -135,13 +138,25 @@ along with theoenglund.github.io. If not, see https://www.gnu.org/licenses/.
 	
 <h2>Att göra:</h2>	
 <details>
-<summary>En kort lista över delar av sidan som kan eller bör förbättras></summary>
+<summary>En kort lista över delar av sidan som kan eller bör förbättras</summary>
 <p>Just nu är sidan mestadels tom och saknar innehåll. Här följer en lista på sidor eller funktioner som jag vill skapa eller lägga till i framtiden.</p>
 <li>Skapa en blogg: Den nuvarande bloggen är tom och svåranvänd.</li>
 <li>Skapa en bättre sidokarta</li>
 <li>Förbättra "Om mig": För nuvarande upplever jag att FAQ-sektionen innehåller alldeles för få frågor och svar. </li>
 <li>Skapa en fungerande sökfunktion: Jag har funderat på att skriva ett skript i Perl för att lösa detta även om jag är osäker på hur detta kan komma att fungera i praktiken. En möjlig lösning kan vara att bygga den i JavaScript då sidan endast kan innehålla HTML/CSS/JS.</li>
 </details>
+
+<script>
+  const el = document.getElementById('sekunder-sedan-epok');
+
+  function uppdateraSekunder() {
+    const sek = Math.floor(Date.now() / 1000);
+    el.textContent = sek.toLocaleString('sv-SE');
+  }
+
+  uppdateraSekunder();
+  setInterval(uppdateraSekunder, 250);
+</script>
 	
 <p>Om du har några idéer för att förbättra sidan finns källan längst ner på sidan. Att skapa en sökfunktion och att förbättra kvaliteten av sidan är av hög prioritet.</p>
 
