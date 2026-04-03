@@ -121,7 +121,7 @@ along with theoenglund.github.io. If not, see https://www.gnu.org/licenses/.
 <p>Ett (lite utdaterat) <a href="feed.xml">RSS-feed </a> för att följa uppdateringar/nyheter från min webbsida.</p>
 	
 
-<h5>Antalet sekunder sedan 1 januari 1970: <span id="sekunder-sedan-epok"></span></h5>
+<h5>Antalet sekunder sedan 1 januari 1970: <span id="sekunder-sedan-epoken"></span></h5>
 
 	
 <!-- Ska bygga en sektion här sen 	
@@ -147,7 +147,7 @@ along with theoenglund.github.io. If not, see https://www.gnu.org/licenses/.
 </details>
 
 <script>
-  const el = document.getElementById('sekunder-sedan-epok');
+  const el = document.getElementById('sekunder-sedan-epoken');
 
   function uppdateraSekunder() {
     const sek = Math.floor(Date.now() / 1000);
@@ -155,7 +155,7 @@ along with theoenglund.github.io. If not, see https://www.gnu.org/licenses/.
   }
 
   uppdateraSekunder();
-  setInterval(uppdateraSekunder, 250);
+  setInterval(uppdateraSekunder, 750);
 </script>
 	
 <p>Om du har några idéer för att förbättra sidan finns källan längst ner på sidan. Att skapa en sökfunktion och att förbättra kvaliteten av sidan är av hög prioritet.</p>
